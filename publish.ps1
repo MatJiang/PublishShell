@@ -75,8 +75,6 @@ foreach ($file in $files) {
     OutPutFiles $file.FullName $tempFile
 }
 
-$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
-
 Write-Host "`nProgram Finished...`n"
 # If running in the console, wait for input before closing.
 if ($Host.Name -eq "ConsoleHost") {
